@@ -5,7 +5,7 @@ function enviarDatos() {
     versiculo = document.getElementById("versiculo").value;
     resultado = document.getElementById("resultado");
     area = document.getElementById("area");
-    apiKey = "ac6e5a8781c651263e53e54afde00159"
+    apiKey = "9600a946a5e833bd68328be579e0c422"
 
     //console.log("La cita es " + libro + " " + capitulo + ":" + versiculo);
 
@@ -45,6 +45,7 @@ function enviarDatos() {
       .catch(error => {
         console.error('Error:', error);
         alert(error.message);
+        window.location.reload();
       });
 }
 
