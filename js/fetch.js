@@ -45,7 +45,6 @@ function enviarDatos() {
       .catch(error => {
         console.error('Error:', error);
         alert(error.message);
-        window.location.reload();
       });
 }
 
