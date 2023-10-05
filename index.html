@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <title>Verify1.0</title>
+</head>
+<body>
+    <div class="container">
+        <div class="alert alert-success" role="alert">
+            <center>
+                <h1>__Verify1.0__</h1>
+            </center>
+        </div>
+        <div class="alert alert-dark" role="alert">
+            <strong>Parte:</strong>
+            <select name="parte" id="parte" onchange="getParte()">
+                <option value="NINGUNA">Selecciona una parte</option>
+                <option value="Ant">Antiguo</option>
+                <option value="Nue">Nuevo</option>
+            </select>
+            <br><br>
+            <strong>Libro:</strong>
+            <select name="libros" id="libros"></select>
+            <br><br>
+            <strong>Capitulo:</strong>
+            <input type="number" id="capitulo">
+            <br><br>
+            <strong>Versiculo:</strong>
+            <input type="number" id="versiculo">
+            <br><br>
+            <strong>Tipo:</strong>
+            <select name="tipo" id="tipo">
+                <option value="Ta">Total de "A"</option>
+                <option value="Te">Total de "E"</option>
+                <option value="Ti">Total de "I"</option>
+                <option value="To">Total de "O"</option>
+                <option value="Pri">Primera palabra</option>
+                <option value="Ult">Ultima palabra</option>
+                <option value="PyU">Primera y ultima palabra</option>
+            </select>
+            <br><br>
+            <center>
+                <textarea name="area" id="area" style="resize: none;" readonly cols="30" rows="5"></textarea>
+            </center>
+            <center>
+                 <strong id="resultado">0</strong>
+            </center>
+            <br>
+            <center>
+                <button type="button" class="btn btn-success" onclick="enviarDatos()">Verificar</button>
+            </center>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+    <script src="./js/fetch.js"></script>
+</body>
+</html>
